@@ -1,0 +1,16 @@
+<h1>Notes</h1>
+<div class="container"> 
+    <ul class="list-groupe">
+        <!--
+        <li *ngFor="let t of tabNotes; let indice=index" class="list-group-item">{{t}}</li>
+
+        -->
+       <li *ngFor="let n of tabNotes" [ngClass]="{'list-group-item':true,
+ 'list-group-item-success': n>=10,
+ 'list-group-item-danger':n <10
+ }">{{n}}</li>
+    </ul>
+    <button class="btn btn-danger" (click)="premier()">Premier</button>
+    <button class="btn btn-success" (click)="dernier()">Dernier</button>
+
+</div> 
